@@ -1,0 +1,28 @@
+# The default resources
+__default__:
+    nodes: 1
+    cores: 1
+    partition: "short"
+    mem: 16GB
+    time: "12:00:00"
+    # hours:minutes:seconds
+
+dada2_remove_chimeras:
+    cores: "{threads}"
+    mem: 64GB
+
+dada2_learn_errors:
+    cores: "{threads}"
+    mem: 96GB
+
+dada2_collapse_nomismatch:
+    cores: "{threads}"
+    mem: 96GB
+
+taxonomy_decipher:
+    cores: "{threads}"
+    mem: 96GB
+
+taxonomy_silva_species:
+    cores: "{threads}"
+    mem: 96GB
